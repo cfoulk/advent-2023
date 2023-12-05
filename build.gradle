@@ -9,32 +9,32 @@ plugins {
     id 'java'
 }
 
-task jarQ1(type: Jar) {
+task jarD1Q1(type: Jar) {
     manifest {
-        attributes 'Main-Class': 'com.advent.Question1'
+        attributes 'Main-Class': 'com.advent.day_1.Question1'
     }
     from sourceSets.main.output
 }
 
-task q1(type: Exec) {
-    dependsOn jarQ1
+task d1q1(type: Exec) {
+    dependsOn jarD1Q1
     group = "Execution"
-    description = "Run jar for com.advent.Question1"
-    commandLine "java", "-jar", jar.archiveFile.get(), 'com.advent.Question1'
+    description = "day_1 question1"
+    commandLine "java", "-jar", jar.archiveFile.get(), 'com.advent.day_1.Question1'
 }
 
-task jarQ2(type: Jar) {
+task jarD1Q2(type: Jar) {
     manifest {
-        attributes 'Main-Class': 'com.advent.Question2'
+        attributes 'Main-Class': 'com.advent.day_1.Question2'
     }
     from sourceSets.main.output
 }
 
-task q2(type: Exec) {
-    dependsOn jarQ2
+task d1q2(type: Exec) {
+    dependsOn jarD1Q2
     group = "Execution"
-    description = "Run jar for com.advent.Question2"
-    commandLine "java", "-jar", jar.archiveFile.get(), 'com.advent.Question2'
+    description = "day_1 question2"
+    commandLine "java", "-jar", jar.archiveFile.get(), 'com.advent.day_1.Question2'
 }
 
 repositories {

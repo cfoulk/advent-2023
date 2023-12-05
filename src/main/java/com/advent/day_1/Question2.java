@@ -1,4 +1,4 @@
-package com.advent;
+package com.advent.day_1;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -24,7 +24,7 @@ public class Question2 {
 
         try {
             int sum = 0;
-            BufferedReader br = new BufferedReader(new FileReader("./src/main/java/com/advent/Question2.txt"));
+            BufferedReader br = new BufferedReader(new FileReader("./src/main/java/com/advent/day_1/Question2.txt"));
             String line;
             while ((line = br.readLine()) != null) {
                 Pair first = getFirst(line);

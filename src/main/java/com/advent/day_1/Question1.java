@@ -1,4 +1,4 @@
-package com.advent;
+package com.advent.day_1;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -8,7 +8,7 @@ public class Question1 {
 
         try {
             int sum = 0;
-            BufferedReader br = new BufferedReader(new FileReader("./src/main/java/com/advent/Question1.txt"));
+            BufferedReader br = new BufferedReader(new FileReader("./src/main/java/com/advent/day_1/Question1.txt"));
             String line;
             while((line = br.readLine()) != null) {
                 // System.out.println(line);
